@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartcity7">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".SmartCityApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.activity.Log.LogInfoActivity"></activity>
+        <activity android:name=".ui.activity.Log.LogContentActivity" />
+        <activity android:name=".ui.activity.Log.LogActivity" />
+        <activity android:name=".ui.activity.part.PartContnetActivity" />
+        <activity android:name=".ui.activity.part.PartActivity" />
+        <activity android:name=".ui.activity.pet.WenActivity" />
+        <activity android:name=".ui.activity.pet.PetDoctorActivity" />
+        <activity android:name=".ui.activity.pet.PetActivity" />
+        <activity android:name=".ui.me.FeedActivity" />
+        <activity android:name=".ui.me.PassActivity" />
+        <activity android:name=".ui.me.UserActivity" />
+        <activity android:name=".ui.home.NewsContentActivity" />
+        <activity android:name=".ui.home.SvActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.acctount.LoginActivity" />
+        <activity android:name=".ui.activity.LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

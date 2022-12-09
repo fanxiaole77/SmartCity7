@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ui.me.UserActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/q"
+        app:title="个人中心"
+        android:background="#ff0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+   <LinearLayout
+       android:gravity="center_horizontal"
+       android:padding="10dp"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ImageView
+           android:id="@+id/up_avatar"
+           android:layout_marginTop="50dp"
+           android:layout_width="60dp"
+           android:layout_height="60dp"/>
+       <TextView
+           android:id="@+id/xiugai"
+           android:text="修改"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <LinearLayout
+           android:layout_marginTop="20dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:text="昵称:"
+               android:textSize="24dp"
+               android:textStyle="bold"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+           <EditText
+               android:id="@+id/et_nick"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_marginTop="20dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:text="性别:"
+               android:textSize="24dp"
+               android:textStyle="bold"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+          <RadioGroup
+              android:id="@+id/rg_sex"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <RadioButton
+                  android:id="@+id/man"
+                  android:text="男"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+              <RadioButton
+                  android:id="@+id/wu_man"
+                  android:text="女"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+          </RadioGroup>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_marginTop="20dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:text="手机号:"
+               android:textSize="24dp"
+               android:textStyle="bold"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+           <EditText
+               android:id="@+id/et_phone"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+
+       <Button
+           android:id="@+id/save1"
+           android:textColor="#fff"
+           android:background="@drawable/bj"
+           android:layout_marginTop="20dp"
+           android:text="保存"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+
+   </LinearLayout>
+
+
+
+</LinearLayout>

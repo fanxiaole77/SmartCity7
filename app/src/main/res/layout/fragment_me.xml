@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ui.me.MeFragment">
+
+    <ImageView
+        android:id="@+id/avatar_image"
+        android:scaleType="fitXY"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_user"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:background="@drawable/no_bj"
+        android:text="个人中心界面入口"
+        android:id="@+id/btn_user"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:background="@drawable/no_bj"
+        android:text="修改密码界面入口"
+        android:id="@+id/btn_pass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:background="@drawable/no_bj"
+        android:text="订单列表界面入口"
+        android:id="@+id/btn_all"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:background="@drawable/no_bj"
+        android:text="意见反馈界面入口"
+        android:id="@+id/btn_feed"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_exit"
+        android:text="退出"
+        android:layout_width="100dp"
+        android:layout_height="50dp"/>
+
+</LinearLayout>
